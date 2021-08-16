@@ -1,0 +1,171 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+</head>
+<body>
+    <div class="topbar">
+        <span class="dan">Daniel</span>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact Us</a>
+        </nav>
+    </div>
+    <div class="banner">
+        <h1>Welcome To D.TECH</h1>
+        <p>The Home of Cutting Edge Technology</p>
+    </div> 
+    <h1>Our Services</h1>
+    <div class="services">
+    <div>
+        <img src="images/FB_IMG_16261611830873888.jpg" alt="">
+        <h3>Web Development</h3>
+        <p>
+            i build high-end web apps with latest and Cutting edge technologies
+        </p>
+        <span class="btn">learn more</span>
+    </div>
+    <div>
+        <img src="images/FB_IMG_16277423664472316.jpg" alt="">
+        <h3>Satellite Installation</h3>
+        <p>
+            I hav the skill of istalling satellite with no stress
+        </p>
+        <span class="btn">learn more</span>
+    </div>
+    <div>
+        <img src="images/FB_IMG_16276722524213995.jpg" alt="">
+        <h3>Piano Tutorials</h3>
+        <p>
+           I am a good trainer, capable of raising professionals
+        </p>
+        <span class="btn">learn more</span>
+    </div>
+    <div class="t">
+        <img src="images/IMG_20210605_133035.jpg" alt="">
+        <h3>Driving School</h3>
+        <p>
+            You learn driving with us, you become an expert at a glance
+        </p>
+        <span class="btn">learn more</span>
+    </div>
+    </div>
+
+
+
+    <style>
+        .services div{
+            flex: 2;
+            height: 250px;
+            background: white;
+            margin: 20px;
+            border-radius: 4px;
+            color: tomato;
+            text-align: center;
+            border: 4px solid tomato;
+            
+        }
+        .btn{
+            width: 140px;
+            height: 49px;
+            padding: 8px;
+            text-align: center;
+            text-transform: capitalize;
+            background-color: royalblue;
+            color: white;
+        }
+        .services img {
+            margin-top: -60px;
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 100%;
+            margin-bottom: 20px;
+
+        }
+        .services p{
+            padding-bottom: 12px;
+        }
+        body{
+            margin: 0;
+        }
+        .topbar{
+            height: 70px;
+            background: tomato;
+            color: white;
+            display: flex;
+            /* flex-direction: column; */
+            justify-content: space-between;
+            padding: 0 5%;
+            align-items: center;
+        }
+        nav a {
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  color: blue;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 12px;
+  background: white;
+  padding: 7px;
+  border-radius: 5px;
+        }
+        .dan{
+            font-family: "Atkinson Hyperlegible", sans-serif;
+  color: blue;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 12px;
+  background: white;
+  padding: 7px;
+  border-radius: 5px;  
+        }
+        span{
+            font-family:Atkinson Hyperlegible", sans-serif ;   
+        }
+        .banner{
+            height: 450px;
+            background: url(images/daniel.jpg);
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+        .banner   h1{
+            font-size: 60px;
+            color: blue;
+            font-weight: 900;
+            margin: 12px;
+            padding: 8px;
+            border-radius: 5px;
+        
+            text-align: center;
+
+        }
+        .banner   p{
+            font-size: 40px;
+            color: blue;
+            font-weight: 900;
+            margin: 12px;
+            padding: 8px;
+            border-radius: 5px;
+           
+        }
+        .services{
+            height: 400px;
+            background: rgba(0, 0,0, 0.8);
+            align-items: center;
+            display: flex;
+            padding: 10%;
+
+        }
+    </style>
+</body>
+</html>
